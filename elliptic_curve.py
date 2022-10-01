@@ -139,7 +139,7 @@ class MontgomeryCurve(EllipticCurve):
 		s = ((P[1] - Q[1]) * pow(P[0] - Q[0], -1, self.p)) % self.p 
 
 		R = [-1, -1] 
-		R[0] = (B * s ** 2 - self.A - P[0] - Q[0]) % self.p 
+		R[0] = (self.B * s ** 2 - self.A - P[0] - Q[0]) % self.p 
 		R[1] = (-P[1] -self.B * s**3 + s * (self.A  + 2*P[0] + Q[0])) % self.p 
 		
 		return R
@@ -153,7 +153,7 @@ class MontgomeryCurve(EllipticCurve):
 			return [-1, -1] 
 
 		# Doubling
-		s = ((3 * P[0] ** 2 + 2 * self.A * P[0] + 1) * pow(2 * B * P[1], -1, self.p)) % self.p
+		s = ((3 * P[0] ** 2 + 2 * self.A * P[0] + 1) * pow(2 * self.B * P[1], -1, self.p)) % self.p
 
 		R = [-1, -1] 
 		R[0] = (self.B * s ** 2 - 2 * P[0] - self.A) % self.p 
