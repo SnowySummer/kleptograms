@@ -23,7 +23,15 @@ This repository contains 2 files :
  
 First, we generate $c_1$, we then define $c_2$ as follows :
 $$t \in \\{0, 1\\}$$
-$$z = (c_1 - wt) G . (-ac_1 - b) . Q$$ 
+$$z = (c_1 - wt) G + (-ac_1 - b) . Q$$ 
 $$c_2 = H(z)$$
 
 Where $w$ is an odd number, $a$, $b$ are integers and $Q = k G$ where $k$ is only known by the attacker.  H is a non-invertible function.
+
+
+The attacker can find $c_2$ from $M_1$ $=$ $c_1$ $G$ and $M_2$ $=$ $c_2$ $G$ by calculating the following :
+$$R = aM_1 + bG$$
+$$Z = M_1 - kR$$
+
+If $H(Z)G = M_2$, then $c_2 = H(Z)$
+If not, then $c_2 = H(Z - wG)$
