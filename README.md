@@ -34,4 +34,5 @@ $$R = aM_1 + bG$$
 $$Z = M_1 - kR$$
 
 If $H(Z)G = M_2$, then $c_2 = H(Z)$
+
 If not, then $c_2 = H(Z - wG)$
