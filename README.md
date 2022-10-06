@@ -19,9 +19,11 @@ This repository contains 2 files :
  
  ## Kleptogram
  
- The idea behind the kleptogram is to generate numbers $c_n$ and to send $c_n$ $G$. We carefully define $c_n$ such that it can be rediscovered by the attacker, but not by other agents.
+ The idea behind the kleptogram is to generate numbers $c_n$ and to send $c_n$ $G$. We carefully define   $c_n$ such that it can be rediscovered by the attacker, but not by other agents.
  
 First, we generate $c_1$, we then define $c_2$ as follows :
-- Set t as 0 or 1
-- Define z = ($c_1$ - $wt$) $G$ . ($-ac_1$ - $b$) . $Q$
-- Define $c_2$ = H(z)
+$$t \in \\{0, 1\\}$$
+$$z = (c_1 - wt) G . (-ac_1 - b) . Q$$ 
+$$c_2 = H(z)$$
+
+Where $w$ is an odd number, $a$, $b$ are integers and $Q = k G$ where $k$ is only known by the attacker.  H is a non-invertible function.
