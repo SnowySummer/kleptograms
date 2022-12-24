@@ -77,6 +77,7 @@ if __name__ == "__main__":
 
     # Start attack
     num_messages = 100
+    print(f"Start test with {num_messages} messages")
     m, cn = eck_generate(x25519, Q, w, a, b)
 
     # List of correct random numbers
