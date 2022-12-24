@@ -9,11 +9,11 @@ This repository contains 2 files :
  ## Elliptic curve
  
  The Elliptic curve is a class where we define elliptic curves operation :
+ - get the order of the curve
+ - check if a point is on the curve
  - addition
  - doubling
  - scalar multiplication
- - check if a point is on the curve
- - get the order of the curve
  
  We've defined 2 types of curve, the Weierstrass form and the Montgomery curve
  
