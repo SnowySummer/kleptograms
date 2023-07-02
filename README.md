@@ -3,8 +3,8 @@
 A showcase of an elliptic curve kleptogram.
 
 This repository contains 2 files :
- - elliptic_curve.py : set-up the framework for using elliptic curves
- - ec_kleptogram.py : set up the actual kleptogram
+ - elliptic_curve.py : sets up the framework for using elliptic curves
+ - ec_kleptogram.py : sets up the actual kleptogram
  
  ## Elliptic curve
  
